@@ -19,4 +19,5 @@ def lettercount(n):
             return counts[n%10] + counts[n//10*10]
 
 from functools import reduce
+#11 here is for the string "One Thousand"
 reduce (lambda x,y : x+lettercount(y), list(range(1,1000)),0) + 11
