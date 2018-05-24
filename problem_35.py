@@ -35,6 +35,7 @@ for i in primes:
 			non_circular_p.pop(non_circular_p.index(i))
 
 non_circular_p.pop(non_circular_p.index(2))
+non_circular_p.pop(non_circular_p.index(5))
 
 #print([x for x in primes if x not in non_circular_p])
 print(len(primes)-len(non_circular_p))
