@@ -1,17 +1,4 @@
-def isPalindrome (number):
-    
-    trim = number
-    palindrome = 0
-    
-    while (trim>0):
-        last = trim%10
-        trim = trim//10
-        palindrome = last+palindrome*10
-        
-    if(number == palindrome):
-        return True 
-    else:
-        return False
+from projecteuler import isPalindrome 
 
 sol = 0
 for i in range(1000,100,-1):

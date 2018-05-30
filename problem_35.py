@@ -1,14 +1,6 @@
 #this took a long time to run, very nonoptimal
 from math import sqrt
-
-def isPrime(number):
-	if number < 2:
-		return False
-	else:
-	    for i in range(2,int(sqrt(number)+1)):
-	        if (number%i == 0):
-	            return False
-	    return True
+from projecteuler import isPrime
 
 primes = [x for x in range(2,1000000) if isPrime(x)]
 non_circular_p = primes[:]

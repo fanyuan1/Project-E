@@ -1,7 +1,3 @@
-def factorial(n):
-	if n == 0:
-		return 1
-	else:
-		return n*factorial(n-1)
+from projecteuler import fact
 
-print(sum(map(int,str(factorial(100)))))
+print(sum(map(int,str(fact(100)))))

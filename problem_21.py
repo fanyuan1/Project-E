@@ -10,8 +10,6 @@ out = 0
 for i in range(10000):
 	n = sumofdivisor(i)
 	if (i != n) & (i == sumofdivisor(n)):
-		print(i)
-		print(n)
 		out = out + i + n
 
 print(out//2)

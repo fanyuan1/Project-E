@@ -1,9 +1,5 @@
 #there are 10! permutations in total
-def fact(n):
-	if n == 0:
-		return 1
-	else:
-		return n*fact(n-1)
+from projecteuler import fact
 
 n = 1000000-1
 

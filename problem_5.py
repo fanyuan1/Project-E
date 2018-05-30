@@ -1,10 +1,4 @@
-from math import sqrt
-
-def isPrime(number):
-    for i in range(2,int(sqrt(number)+1)):
-        if (number%i == 0):
-            return False
-    return True
+from projecteuler import isPrime
 
 out = 1
 

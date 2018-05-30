@@ -3,15 +3,7 @@
 #some constraints: n = 0 ===> b has to be prime
 #n = 1 ===> 1+a+b has to be prime?
 from math import sqrt
-
-def isPrime(number):
-	if number < 2:
-		return False
-	else:
-	    for i in range(2,int(sqrt(number)+1)):
-	        if (number%i == 0):
-	            return False
-	    return True
+from projecteuler import isPrime
 
 #b can only take on these values
 primes = list(filter(isPrime, range(2,1000)))
